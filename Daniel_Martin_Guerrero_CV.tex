@@ -29,7 +29,6 @@
 
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{tikz}
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
   pdftitle={Daniel Martín Guerrero -- CV},
@@ -73,7 +72,7 @@
   {\fontsize{18}{20}\selectfont\scshape\color{accent} Daniel Martín Guerrero}\\[0.6ex]
   BSc in Physics (2025--2029) \,·\, second-year undergraduate\\
   Faculty of Sciences, Universidad de Salamanca\\[0.2ex]
-  {\color{muted}$\langle\,\text{physics}\,|\,\text{philosophy}\,\rangle \neq 0$ \;·\; optics, astrophysics \& science communication}
+  {\small\color{muted}Optics \& Photonics \textcolor{accent}{·} Astrophysics \textcolor{accent}{·} Quantum Mechanics \textcolor{accent}{·} Science Communication}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.36\linewidth}
@@ -86,14 +85,10 @@
   Salamanca, Spain\,\icon{\faMapMarker*}
 \end{minipage}
 
-\vspace{1.0ex}
-\begin{tikzpicture}[x=1cm,y=1cm]
-  % accent rule with a Gaussian wave packet: a quiet nod to physics
-  \draw[accent, line width=0.7pt] (0,0) -- (18.3,0);
-  \draw[accent!60, line width=0.5pt, domain=0:7.2, samples=500, smooth]
-    plot (\x, {0.13*sin(11*\x r)*exp(-((\x-3.6)/1.25)^2)});
-\end{tikzpicture}
-\vspace{-1.9ex}
+\vspace{1.2ex}
+% classic double rule: thick accent line over a thin hairline
+{\color{accent}\hrule height 1.1pt}\vspace{1.4pt}{\color{accent!55}\hrule height 0.4pt}
+\vspace{-0.3ex}
 
 % ----------------------------- Education ----------------------------
 \section{Education}
