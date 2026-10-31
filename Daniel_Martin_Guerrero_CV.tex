@@ -9,147 +9,175 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
 \usepackage{libertinus}            % Libertinus Serif (text and maths)
 \usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
 \pdfgentounicode=1                 % machine-readable (ATS-friendly) text
 
 % ---------- Layout --------------------------------------------------
-\usepackage[a4paper,top=1.3cm,bottom=1.2cm,left=1.7cm,right=1.7cm]{geometry}
+\usepackage[a4paper,top=1.0cm,bottom=0.9cm,left=1.35cm,right=1.35cm]{geometry}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
 \usepackage{xcolor}
-\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{ink}{HTML}{1C1C1C}
 \definecolor{accent}{HTML}{1F3B5A}
-\definecolor{muted}{HTML}{6B6B6B}
-\color{ink}
+\definecolor{muted}{HTML}{666B73}
 
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{tikz}
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
   pdftitle={Daniel Martín Guerrero -- CV},
   pdfauthor={Daniel Martín Guerrero},
-  pdfsubject={Curriculum Vitae -- BSc in Physics, Universidad de Salamanca}
+  pdfsubject={Curriculum Vitae -- BSc in Physics, Universidad de Salamanca},
+  pdfkeywords={Physics, Optics, Photonics, Astrophysics, Quantum Mechanics, Science Communication}
 }
 
 % ---------- Section style: small caps + hairline --------------------
 \titleformat{\section}
-  {\large\scshape\color{accent}}{}{0pt}{}
-  [\vspace{-0.4ex}{\color{accent!35}\titlerule[0.4pt]}]
-\titlespacing*{\section}{0pt}{2.3ex}{0.9ex}
+  {\fontsize{11.5}{13}\selectfont\scshape\color{accent}}{}{0pt}{}
+  [\vspace{-0.5ex}{\color{accent!45}\titlerule[0.5pt]}]
+\titlespacing*{\section}{0pt}{1.05ex}{0.5ex}
 
 % ---------- Lists ---------------------------------------------------
-\setlist[itemize]{leftmargin=1em, labelsep=0.45em, itemsep=0.05ex,
-  topsep=0.15ex, parsep=0pt, partopsep=0pt, label={\color{muted}\textbullet}}
+\setlist[itemize]{leftmargin=1.0em, labelsep=0.4em, itemsep=0pt,
+  topsep=0.05ex, parsep=0pt, partopsep=0pt,
+  label={\color{accent!70}\raisebox{0.15ex}{\tiny$\blacktriangleright$}}}
 
 % ---------- Entry macros --------------------------------------------
-% \entry{Title}{Date}{Detail}
-\newcommand{\entry}[3]{%
-  {\bfseries #1}\if\relax\detokenize{#3}\relax\else\,{\color{muted}\,|\,}\,{\itshape #3}\fi
-  \hfill{\color{muted}#2}\par}
+% \entry{Title}{Date}{Subtitle}{Location}
+\newcommand{\entry}[4]{%
+  {\bfseries #1}\hfill{\itshape\color{muted}#2}\par
+  \if\relax\detokenize{#3#4}\relax\else
+    {\itshape #3}\hfill{\color{muted}#4}\par
+  \fi}
+% line with a right-aligned date that never collides with the text
+\newcommand{\dated}[2]{#1\hfill\mbox{\quad\itshape\color{muted}#2}}
 % \row{Label}{Text}
-\newcommand{\row}[2]{\makebox[2.5cm][l]{\textsc{\color{accent}#1}}#2\par\vspace{0.3ex}}
-\newcommand{\gap}{\vspace{1.1ex}}
+\newcommand{\row}[2]{\hangindent=1em\hangafter=1{\bfseries\color{accent}#1:} #2\par}
+\newcommand{\gap}{\vspace{0.45ex}}
+\newcommand{\icon}[1]{\makebox[1.15em][c]{\color{accent}#1}}
 
 % ===================================================================
 \begin{document}
+\fontsize{9.6}{11.35}\selectfont\color{ink}
 
 % ------------------------------ Header ------------------------------
-\begin{center}
-  {\fontsize{22}{24}\selectfont\scshape\color{accent} Daniel Martín Guerrero}\\[0.7ex]
-  {\color{muted}BSc in Physics (2025--2029) \,·\, Faculty of Sciences, Universidad de Salamanca \,·\, Salamanca, Spain}\\[0.4ex]
-  \small
-  \href{tel:+34644419365}{+34-644\,419\,365} \,·\,
-  \href{mailto:daniel.martgue@usal.es}{daniel.martgue@usal.es} \,·\,
-  \href{https://www.tiktok.com/@_.danielmg}{tiktok.com/@\_.danielmg} \,·\,
-  \href{https://letterboxd.com/danielmtg/}{letterboxd.com/danielmtg}
-\end{center}
-\vspace{-1.2ex}
+\begin{minipage}[t]{0.62\linewidth}
+  \vspace{0pt}
+  {\fontsize{18}{20}\selectfont\scshape\color{accent} Daniel Martín Guerrero}\\[0.6ex]
+  BSc in Physics (2025--2029) \,·\, second-year undergraduate\\
+  Faculty of Sciences, Universidad de Salamanca\\[0.2ex]
+  {\color{muted}$\langle\,\text{physics}\,|\,\text{philosophy}\,\rangle \neq 0$ \;·\; optics, astrophysics \& science communication}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.36\linewidth}
+  \vspace{0.1ex}
+  \raggedleft
+  \href{tel:+34644419365}{+34-644\,419\,365}\,\icon{\faPhone}\\
+  \href{mailto:daniel.martgue@usal.es}{daniel.martgue@usal.es}\,\icon{\faEnvelope}\\
+  \href{https://www.tiktok.com/@_.danielmg}{tiktok.com/@\_.danielmg}\,\icon{\faTiktok}\\
+  \href{https://letterboxd.com/danielmtg/}{letterboxd.com/danielmtg}\,\icon{\faFilm}\\
+  Salamanca, Spain\,\icon{\faMapMarker*}
+\end{minipage}
+
+\vspace{1.0ex}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % accent rule with a Gaussian wave packet: a quiet nod to physics
+  \draw[accent, line width=0.7pt] (0,0) -- (18.3,0);
+  \draw[accent!60, line width=0.5pt, domain=0:7.2, samples=500, smooth]
+    plot (\x, {0.13*sin(11*\x r)*exp(-((\x-3.6)/1.25)^2)});
+\end{tikzpicture}
+\vspace{-1.9ex}
 
 % ----------------------------- Education ----------------------------
 \section{Education}
-\entry{Universidad de Salamanca (USAL)}{2025 -- Present}{BSc in Physics, second year -- expected June 2029}
+\entry{Universidad de Salamanca (USAL) -- BSc in Physics}{2025 -- Present}{Second year, expected June 2029 \;·\; Highest Honours in \textup{Physics Laboratory}}{Salamanca, Spain}
 \begin{itemize}
-  \item Highest Honours in \textit{Physics Laboratory}.
-  \item Coursework: linear algebra and geometry (tensors,
-        sesquilinear forms), mathematical analysis, differential equations and physical modelling,
-        classical mechanics and waves, electromagnetism, thermodynamics, data analysis and uncertainty quantification.
+  \item \textbf{Mathematics:} linear algebra and geometry (matrix and tensor calculus; bilinear, sesquilinear and quadratic forms;
+        dual spaces; affine and Euclidean geometry; foundations of differential geometry); multivariable and vector calculus,
+        series and complex variable; differential equations for physical models (logistic, Gompertz, SIS and Lotka--Volterra
+        dynamics; RLC circuits via Laplace transforms; Fourier signal analysis); introduction to topology, stochastic processes and measure theory.
+  \item \textbf{Physics:} classical mechanics, oscillations and waves (fundamentals of optics), electromagnetism, thermodynamics and
+        computational techniques; uncertainty quantification (propagation of variances, weighted means, $\chi^2$ least-squares fits,
+        Welch--Satterthwaite coverage intervals).
 \end{itemize}
 \gap
-\entry{High School Diploma (Bachillerato)}{2023 -- 2025}{Science and Technology track, IES Federico García Bernalt}
-\begin{itemize}
-  \item Graduated \textbf{with Honours}, GPA \textbf{9.88/10}; university entrance examination (PAU) \textbf{13.378/14}.
-\end{itemize}
+\entry{High School Diploma (Bachillerato) -- Science and Technology track}{2023 -- 2025}{IES Federico García Bernalt \;·\; graduated \textup{\textbf{with Honours}}, GPA \textup{\textbf{9.88/10}} \;·\; PAU \textup{\textbf{13.378/14}}}{Salamanca, Spain}
 
 % ----------------------- Science communication ----------------------
 \section{Science Communication \& Outreach}
-\entry{Radio USAL -- \textit{Eureka}, science outreach programme}{2026 -- Present}{Scriptwriter \& Presenter}
+\entry{Radio USAL -- \textit{Eureka}, science outreach programme}{2026 -- Present}{Scriptwriter \& Presenter; creator of the segment \textup{\textit{Cosmosofía}}}{Supernova Astronomy Association}
 \begin{itemize}
-  \item Created \textit{Cosmosofía}, a segment bridging astrophysics and the philosophy of science, for the
-        University of Salamanca's official radio station (Supernova Astronomy Association).
+  \item Write and present astronomy content for the University of Salamanca's official radio station (\textit{Radioacción Cósmica} slot).
+        \textit{Cosmosofía} bridges astrophysics and philosophy of science; Episode~I explores our cosmic coordinates, stellar
+        nucleosynthesis and Cecilia Payne's discovery, science as an open conversation and Sagan's \textit{Pale Blue Dot}.
 \end{itemize}
 \gap
-\entry{TikTok -- @\_.danielmg}{Ongoing}{Content Creator}
+\entry{European Researchers' Night 2026 -- Universidad de Salamanca}{25 Sep.\ 2026}{Activity leader, \textup{``Houston, tenemos un telescopio''} (Houston, we have a telescope)}{Salamanca, Spain}
 \begin{itemize}
-  \item AI-assisted physics and mathematics videos, from astrophysics and thermodynamics to Sylvester's law
-        of inertia, differential forms and the generalised Stokes theorem.
+  \item Ran a three-hour public astronomy activity in the EU-funded Marie Skłodowska-Curie European Researchers' Night,
+        part of the 2025--2026 programme of the USAL Scientific Culture and Innovation Unit (UCC+i); officially certified.
 \end{itemize}
 \gap
-\entry{European Researchers' Night -- Universidad de Salamanca}{Sep.\ 2026}{Outreach Activity Leader}
+\entry{TikTok -- @\_.danielmg \textmd{\textit{(content creator)}}}{Ongoing}{}{}
 \begin{itemize}
-  \item Ran the public astronomy activity \textit{Houston, tenemos un telescopio} (3 h, certified by UCC+i).
+  \item AI-assisted physics and mathematics videos, from astrophysics, electromagnetism and thermodynamics to Sylvester's law of
+        inertia, linear differential forms and the generalised Stokes theorem.
 \end{itemize}
 
 % ---------------------------- Talks ---------------------------------
-\section{Talks}
-\entry{XXX International Congress of the Castilian-Leonese Society of Philosophy}{Nov.\ 2025}{Speaker}
+\section{Talks \& Conferences}
+\entry{XXX International Congress of the Castilian-Leonese Society of Philosophy, \textit{Límites del presente}}{19--21 Nov.\ 2025}{Speaker: \textup{``Como lágrimas en la lluvia''} (Like Tears in Rain)}{USAL, Salamanca}
 \begin{itemize}
-  \item \textit{Como lágrimas en la lluvia} (\textit{Like Tears in Rain}), in the session \textit{Anthropocentrism and
-        androcentrism as a limit of compassion}; congress \textit{Límites del presente}, USAL, Salamanca.
+  \item Session \textit{Anthropocentrism and androcentrism as a limit of compassion}, coordinated by Prof.\ Angélica Velasco Sesma (Univ.\ of Valladolid).
 \end{itemize}
 \gap
-\entry{XXI Philosophical Olympiad of Castilla y León, USAL}{Feb.\ 2026}{Invited Speaker \& Panellist}
+\entry{XXI Philosophical Olympiad of Castilla y León, \textit{Madness: Don Quixote in Today's World}}{27 Feb.\ 2026}{Invited Speaker \& Round-Table Panellist}{USAL, Salamanca}
 \begin{itemize}
-  \item \textit{The Shipwreck of Light: on the lucidity of delirium -- Don Quixote, Myshkin and the aesthetics of goodness.}
+  \item \textit{``The Shipwreck of Light: on the lucidity of delirium -- Don Quixote, Myshkin and the aesthetics of goodness''}.
 \end{itemize}
 \gap
-\entry{Book presentation of \textit{Salvar a Sócrates} with author Eduardo Infante}{Jun.\ 2026}{Panellist}
+\entry{Book presentation of \textit{Salvar a Sócrates} (Ariel) with author Eduardo Infante}{5 Jun.\ 2026}{Panellist}{Librería Víctor Jara, Salamanca}
 
 % ---------------------- Projects & independent study ----------------
 \section{Independent Study \& Projects}
-\entry{Quantum Mechanics and Quantum Computing}{2026 -- Present}{Independent study}
 \begin{itemize}
-  \item Authored \LaTeX\ notes on Hilbert spaces, Dirac notation, observables and the Born rule;
-        studying qubits and quantum logic gates.
+  \item \dated{\textbf{Quantum Mechanics \& Quantum Computing:} authored \LaTeX\ notes on Hilbert spaces and the Dirac formalism
+        (inner products, completeness, $L^2(\mathbb{R})$, bras and kets, Hermitian operators, spectral decomposition, Born rule);
+        studying qubits and quantum gates (Hadamard).}{2026 -- Present}
+  \item \dated{\textbf{AI-Assisted Modelling:} simulations and models of physical systems, from parametrised manifolds to
+        least-squares fits, and structured study notes with Claude Opus 5.5, Gemini, open-source LLMs and NotebookLM.}{2025 -- Present}
 \end{itemize}
-\gap
-\entry{AI-Assisted Modelling Workflow}{2025 -- Present}{Personal project}
+
+% ------------------------ Memberships -------------------------------
+\section{Associations \& Memberships}
 \begin{itemize}
-  \item Use Claude Opus 5.5, Gemini, open-source LLMs and NotebookLM for study notes, physical simulations and
-        modelling, from parametrised manifolds to least-squares fits.
+  \item \dated{\textbf{Supernova}, University Astronomy Association (USAL): outreach events, observation nights, retreats and radio.}{2025 -- Present}
+  \item \dated{\textbf{OSAL Student Chapter}: student association for optics and photonics outreach, Universidad de Salamanca.}{Member}
+  \item \dated{\textbf{Optica} (Advancing Optics and Photonics Worldwide): Individual Member.}{Through Sep.\ 2027}
+  \item \dated{\textbf{Delegación Charra}: Salamanca delegation of the Student Group of the Royal Spanish Physics Society (GdeE--RSEF).}{Member}
 \end{itemize}
 
 % -------------------------- Honours ---------------------------------
 \section{Honours \& Awards}
 \begin{itemize}
-  \item University Access Award, Universidad de Salamanca -- top 100 entrance-exam scores; full first-year tuition waiver \hfill{\color{muted}2025}
-  \item Finalist, Philosophical Olympiad of Castilla y León -- philosophical dissertation, two consecutive editions \hfill{\color{muted}2024, 2025}
-  \item Participant, PLANCKS 2027 -- international theoretical physics competition \hfill{\color{muted}Upcoming}
+  \item \dated{\textbf{University Access Award}, USAL: top 100 scores in the general phase of the 2024/25 PAU; full first-year tuition waiver.}{2025}
+  \item \dated{\textbf{Finalist}, Philosophical Olympiad of Castilla y León, philosophical dissertation (XIX and XX editions).}{2024, 2025}
+  \item \dated{\textbf{Participant}, PLANCKS 2027 -- international theoretical physics competition.}{Upcoming}
 \end{itemize}
 
-% ------------------------ Memberships -------------------------------
-\section{Memberships}
-Optica (Individual Member) \,·\, OSAL Student Chapter (Optica, USAL) \,·\, Supernova Astronomy Association
-\,·\, Student Group of the Royal Spanish Physics Society (GdeE--RSEF), Salamanca delegation
-
 % -------------------------- Skills ----------------------------------
-\section{Skills \& Interests}
-\row{Programming}{Python, MATLAB, Arduino (C/C++), HTML (basic)}
-\row{Lab \& Tools}{Breadboard circuits with Arduino and LabVIEW, Mathematica, PHYWE measure, SAOImage DS9, \LaTeX}
-\row{Languages}{Spanish (native), English (advanced, C1-level training)}
-\row{Interests}{Astrophysics, optics and photonics, particle physics, philosophy and cinema}
+\section{Technical Skills \& Interests}
+\row{Programming}{Python, MATLAB, Arduino (C/C++ on the Wiring framework), HTML (basic).}
+\row{Lab \& tools}{Breadboard circuit prototyping with Arduino and LabVIEW; Mathematica, PHYWE measure, SAOImage DS9 (astronomical image analysis), \LaTeX\ (advanced).}
+\row{Languages}{Spanish (native); English (advanced, C1-level training).}
+\row{Interests}{Astrophysics, optics and photonics (laser science, integrated photonics), particle physics, quantum computing;
+  philosophy and cinema (Tarkovsky, Lynch, Bergman, Kurosawa, Kobayashi), film reviews on Letterboxd.}
 
 \end{document}
