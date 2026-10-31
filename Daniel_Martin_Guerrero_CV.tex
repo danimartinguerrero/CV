@@ -1,0 +1,284 @@
+%% ===================================================================
+%%  Curriculum Vitae -- Daniel Martín Guerrero
+%%  BSc in Physics, Universidad de Salamanca
+%%  Compile with: pdflatex Daniel_Martin_Guerrero_CV.tex  (run twice)
+%% ===================================================================
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Encoding, fonts and machine-readable text --------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[sups,scaled=0.98]{XCharter}
+\usepackage[xcharter,vvarbb]{newtxmath}
+\usepackage[scaled=0.86]{sourcesanspro}
+\usepackage{microtype}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% ---------- Page layout --------------------------------------------
+\usepackage[a4paper,top=1.45cm,bottom=1.45cm,left=1.65cm,right=1.65cm]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
+
+% ---------- Colours -------------------------------------------------
+\usepackage[dvipsnames]{xcolor}
+\definecolor{accent}{HTML}{1B3A5C}   % deep "Prussian" blue
+\definecolor{accentlight}{HTML}{4F7CAC}
+\definecolor{muted}{HTML}{5A6270}
+\definecolor{rulegrey}{HTML}{C9D1DB}
+
+% ---------- Packages -----------------------------------------------
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{needspace}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+\hypersetup{
+  pdftitle={Daniel Martín Guerrero -- Curriculum Vitae},
+  pdfauthor={Daniel Martín Guerrero},
+  pdfsubject={Curriculum Vitae -- BSc in Physics, Universidad de Salamanca},
+  pdfkeywords={Physics, Optics, Photonics, Astrophysics, Science Communication, Universidad de Salamanca}
+}
+
+% ---------- Section headings ----------------------------------------
+\titleformat{\section}
+  {\sffamily\bfseries\large\color{accent}}
+  {}{0pt}
+  {\MakeUppercase}
+  [\vspace{-0.55ex}{\color{rulegrey}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{1.35ex}{0.9ex}
+
+% ---------- Lists ---------------------------------------------------
+\setlist[itemize]{
+  leftmargin=1.15em, labelsep=0.5em,
+  itemsep=0.15ex, topsep=0.35ex, parsep=0pt, partopsep=0pt,
+  label={\color{accentlight}\scriptsize$\blacktriangleright$}
+}
+
+% ---------- Entry macros --------------------------------------------
+% \entry{Title}{Date}{Subtitle}{Location}
+\newcommand{\entry}[4]{%
+  \needspace{6\baselineskip}%
+  {\bfseries #1}\hfill{\sffamily\small\color{accent}#2}\par
+  \if\relax\detokenize{#3}\relax\else
+    \vspace{0.1ex}{\itshape\color{muted}#3}\hfill{\sffamily\small\color{muted}#4}\par
+  \fi
+}
+% \award{Text}{Date}
+\newcommand{\award}[2]{%
+  \item\begin{tabularx}{\dimexpr\linewidth}[t]{@{}X@{\hspace{1em}}r@{}}
+    #1 & {\sffamily\small\color{accent}#2}
+  \end{tabularx}%
+}
+% Skill / coursework rows: hanging label column
+\newlength{\skilllabelwidth}\setlength{\skilllabelwidth}{3.2cm}
+\newcommand{\skillrow}[2]{%
+  \noindent\parbox[t]{\skilllabelwidth}{\raggedright\leavevmode\sffamily\bfseries\small\color{accent}\strut#1\strut}%
+  \hspace{0.8em}%
+  \parbox[t]{\dimexpr\linewidth-\skilllabelwidth-0.8em}{\strut#2\strut}\par\vspace{0.55ex}%
+}
+\newenvironment{skilltable}{\par\vspace{0.2ex}}{\par}
+\newcommand{\tech}[1]{\par\vspace{0.2ex}{\small\color{muted}\textit{Tools:} #1}}
+\newcommand{\entrygap}{\vspace{0.9ex}}
+
+\newcommand{\contact}[3]{%
+  \href{#2}{\makebox[1.2em][c]{\color{accent}#1}\,#3}%
+}
+
+% ===================================================================
+\begin{document}
+
+% ------------------------------ Header ------------------------------
+\begin{minipage}[t]{0.60\linewidth}
+  \vspace{0pt}
+  {\fontsize{25}{28}\selectfont\scshape\color{accent} Daniel Martín Guerrero}\\[1.0ex]
+  {\large BSc in Physics \textcolor{muted}{(2025--2029)}}\\[0.35ex]
+  {\color{muted} Faculty of Sciences, Universidad de Salamanca}\\[0.15ex]
+  {\color{muted} Salamanca, Spain}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.37\linewidth}
+  \vspace{0.35ex}
+  \raggedleft\small\sffamily
+  \contact{\faPhone*}{tel:+34644419365}{+34-644\,419\,365}\\[0.55ex]
+  \contact{\faEnvelope[regular]}{mailto:daniel.martgue@usal.es}{daniel.martgue@usal.es}\\[0.55ex]
+  \contact{\faTiktok}{https://www.tiktok.com/@_.danielmg}{@\_.danielmg}\\[0.55ex]
+  \contact{\faFilm}{https://letterboxd.com/danielmtg/}{letterboxd.com/danielmtg}
+\end{minipage}
+
+\vspace{1.4ex}
+{\color{accent}\rule{\linewidth}{1.2pt}}\\[-0.6ex]
+{\centering\small\sffamily\color{muted}
+  Physics \,$\cdot$\, Optics \& Photonics \,$\cdot$\, Astrophysics \,$\cdot$\,
+  Quantum Mechanics \,$\cdot$\, Science Communication\par}
+\vspace{-0.2ex}
+
+% ----------------------------- Education ----------------------------
+\section{Education}
+
+\entry{Universidad de Salamanca (USAL)}{2025 -- Present}
+      {BSc in Physics -- second year, expected June 2029}{Salamanca, Spain}
+\begin{itemize}
+  \item Awarded \textbf{Honours} (\textit{Matrícula de Honor}) in \textit{Physics Laboratory}.
+  \item Holder of the \textbf{University Access Award} (\textit{Premio de Acceso a la Universidad}),
+        a full first-year tuition waiver.
+\end{itemize}
+\entrygap
+
+\entry{Upper Secondary Education (Bachillerato) -- Science and Technology track}{2023 -- 2025}
+      {IES Federico García Bernalt}{Salamanca, Spain}
+\begin{itemize}
+  \item Graduated with \textbf{Honours} (\textit{Matrícula de Honor}); overall average \textbf{9.88/10}.
+  \item University entrance examination (PAU): \textbf{13.378/14}.
+\end{itemize}
+
+% ------------------------- Relevant coursework ----------------------
+\section{Relevant Coursework}
+\begin{skilltable}
+  \skillrow{Linear Algebra \& Geometry}{Matrix and tensor calculus; vector spaces; linear, bilinear and
+    sesquilinear maps (endomorphisms, metrics, polarities, quadratic forms); dual spaces and tensors;
+    affine and Euclidean geometry; foundations of differential geometry.}
+  \skillrow{Mathematical Analysis}{Differential and integral calculus in one and several variables;
+    vector calculus; sequences and series; Taylor expansions and analysis of functions; complex variable.}
+  \skillrow{Differential Equations}{Modelling of physical and natural systems: Malthusian and logistic
+    population dynamics, Gompertz learning curves, SIS epidemic models, Lotka--Volterra systems,
+    RLC circuits via the Laplace transform and signal analysis via the Fourier transform;
+    introduction to topology, stochastic processes and measure theory.}
+  \skillrow{Physics}{Classical mechanics, oscillations and waves (fundamentals of optics),
+    electromagnetism, thermodynamics and computational techniques in physics.}
+  \skillrow{Experimental Physics}{Data treatment and uncertainty quantification in the laboratory and
+    through simulation: statistical estimation, covariance and propagation of variances, weighted means,
+    least-squares fitting with $\chi^2$ model assessment and coverage intervals (Welch--Satterthwaite).}
+\end{skilltable}
+
+% ----------------------- Projects & independent study ---------------
+\section{Independent Study \& Projects}
+
+\entry{Foundations of Quantum Mechanics and Quantum Computing}{2026 -- Present}
+      {Independent study -- author of structured \LaTeX\ lecture notes}{}
+\begin{itemize}
+  \item Authored \textit{Lesson~1: Hilbert Spaces and the Dirac Formalism -- Mathematical Foundations and
+        the Born Postulate}, covering sesquilinear forms and inner products, Cauchy completeness and
+        Hilbert spaces, the space $L^2(\mathbb{R})$ and square integrability, the Cauchy--Schwarz inequality,
+        bras and kets, Hermitian adjoints, observables and spectral decomposition, and the Born rule
+        and interference of probability amplitudes.
+  \item Studying the fundamentals of quantum computation: qubits, observables and quantum logic
+        gates (e.g.\ Hadamard).
+\end{itemize}
+\entrygap
+
+\entry{AI-Assisted Study, Simulation and Modelling Workflow}{2025 -- Present}
+      {Personal project -- Mathematics \& Physics}{}
+\begin{itemize}
+  \item Use frontier and open-source language models to produce structured study notes and to build
+        simulations and models of physical situations, from parametrised manifolds to linear
+        least-squares fits, as well as to formalise and develop new ideas.
+  \item Use NotebookLM as a learning aid for problem solving and for the clear visualisation of
+        complex concepts.
+\end{itemize}
+\tech{Claude Opus 5.5, Gemini, open-source language models, NotebookLM, Python, \LaTeX.}
+
+% ------------------- Science communication & outreach ---------------
+\section{Science Communication \& Outreach}
+
+\entry{\textit{Eureka} -- Science Outreach Programme, Radio USAL}{2026 -- Present}
+      {Scriptwriter \& Presenter; creator of the segment \textit{Cosmosofía}}{Salamanca, Spain}
+\begin{itemize}
+  \item Write and present science-outreach content for the official radio station of the University of
+        Salamanca, within the \textit{Radioacción Cósmica} slot of the Supernova astronomy association.
+  \item Created \textit{Cosmosofía}, a segment bridging astrophysics and the philosophy of science.
+        Episode~I, \textit{``A Sea of Four Hundred Billion Suns''}, explores our cosmic coordinates,
+        stellar nucleosynthesis and Cecilia Payne's discovery, science as an open conversation, and
+        Sagan's \textit{Pale Blue Dot}.
+\end{itemize}
+\entrygap
+
+\entry{Physics \& Mathematics Communication on TikTok -- \href{https://www.tiktok.com/@_.danielmg}{@\_.danielmg}}{Ongoing}
+      {Content creator}{}
+\begin{itemize}
+  \item Produce AI-assisted videos, from general outreach to specialised topics, ranging from
+        astrophysics, electromagnetism and thermodynamics to Sylvester's law of inertia, linear
+        differential forms and the generalised Stokes theorem.
+\end{itemize}
+\entrygap
+
+\entry{European Researchers' Night 2026 -- UCC+i, Universidad de Salamanca}{25 Sep.\ 2026}
+      {Outreach activity \textit{``Houston, tenemos un telescopio''} (\textit{Houston, we have a telescope})}{Salamanca, Spain}
+\begin{itemize}
+  \item Delivered a three-hour public astronomy activity within the Scientific Culture and Innovation
+        Unit (UCC+i) programme 2025--2026 (certified).
+\end{itemize}
+
+% --------------------- Talks & public engagement --------------------
+\section{Talks \& Public Engagement}
+
+\entry{Invited Speaker \& Round-Table Panellist -- XXI Philosophical Olympiad of Castilla y León}{27 Feb.\ 2026}
+      {Universidad de Salamanca -- theme: \textit{Madness: Don Quixote in Today's World}}{Salamanca, Spain}
+\begin{itemize}
+  \item Delivered the talk \textit{``El naufragio de la luz. Disertación filosófica acerca de la lucidez
+        del delirio. Don Quijote, Myshkin y la estética de la bondad''} (\textit{The Shipwreck of Light:
+        a philosophical dissertation on the lucidity of delirium -- Don Quixote, Myshkin and the
+        aesthetics of goodness}); certified by the Philosophical Olympiad Association of Castilla y León.
+\end{itemize}
+\entrygap
+
+\entry{Panellist -- Presentation of \textit{Salvar a Sócrates} (Eduardo Infante, Ariel)}{5 Jun.\ 2026}
+      {Librería Víctor Jara}{Salamanca, Spain}
+\begin{itemize}
+  \item Public conversation with the philosopher and author Eduardo Infante on his novel for learning
+        to philosophise, alongside fellow panellists.
+\end{itemize}
+
+% -------------------------- Honours & awards ------------------------
+\section{Honours \& Awards}
+\begin{itemize}
+  \award{\textbf{University Access Award}, Universidad de Salamanca -- granted to the 100 highest scores
+         in the general phase of the 2024/25 university entrance examination}{2025}
+  \award{\textbf{PAU score of 13.378/14}, Spanish university entrance examination}{2025}
+  \award{\textbf{Honours} (\textit{Matrícula de Honor}), Bachillerato -- average 9.88/10}{2025}
+  \award{\textbf{Honours} (\textit{Matrícula de Honor}) in \textit{Physics Laboratory}, BSc in Physics, USAL}{2026}
+  \award{\textbf{Finalist}, Philosophical Olympiad of Castilla y León (OFCyL), philosophical dissertation
+         category (Bachillerato) -- two consecutive editions (XIX and XX)}{2024, 2025}
+  \award{\textbf{Participant}, PLANCKS 2027 -- international theoretical physics competition}{Upcoming}
+\end{itemize}
+
+% ------------------------ Memberships -------------------------------
+\section{Memberships \& Affiliations}
+\begin{itemize}
+  \award{\textbf{Optica} (Advancing Optics and Photonics Worldwide) -- Individual Member}{Through Sep.\ 2027}
+  \award{\textbf{OSAL Student Chapter} -- student association for optics outreach, Universidad de Salamanca}{Current}
+  \award{\textbf{Supernova} University Astronomy Association -- outreach events, observation nights
+         and retreats; radio scriptwriter and presenter}{2025 -- Present}
+  \award{\textbf{Delegación Charra}, Student Group (GdeE) of the Royal Spanish Physics Society (RSEF)}{Current}
+\end{itemize}
+
+% -------------------------- Technical skills ------------------------
+\section{Technical Skills}
+\begin{skilltable}
+  \skillrow{Programming}{Python, MATLAB, Arduino (C/C++-based language built on the Wiring framework),
+    HTML (basic).}
+  \skillrow{Electronics \& Lab}{Breadboard circuit prototyping with Arduino and LabVIEW; hands-on
+    experimental work, measurement and instrumentation.}
+  \skillrow{Scientific Tools}{Mathematica, PHYWE measure, LabVIEW, Arduino IDE,
+    SAOImage DS9 (astronomical image analysis), \LaTeX\ (advanced).}
+  \skillrow{AI Tools}{Claude Opus 5.5, Gemini, open-source language models, NotebookLM.}
+  \skillrow{Languages}{Spanish (native); English (advanced -- trained up to C1 level; certified through
+    the PAU English examination).}
+\end{skilltable}
+
+% ----------------------------- Interests ----------------------------
+\section{Interests}
+\begin{skilltable}
+  \skillrow{Physics}{Astrophysics; optics and photonics (fundamental laser science, integrated
+    photonics); particle physics; quantum mechanics and quantum computing.}
+  \skillrow{Philosophy \& Film}{Philosophy of science and aesthetics; philosophy through cinema --
+    Tarkovsky, Lynch, Bergman, Kurosawa and Masaki Kobayashi. Film reviewer on Letterboxd
+    (\href{https://letterboxd.com/danielmtg/}{\color{accent}danielmtg}).}
+\end{skilltable}
+
+\end{document}
