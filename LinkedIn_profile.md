@@ -12,7 +12,7 @@ add a second profile in Spanish ("Add profile in another language").
 
 **Headline** (max. 220 characters):
 
-> Physics Undergraduate at Universidad de Salamanca | Optics & Photonics · Astrophysics · Quantum Mechanics | Science Communicator at Radio USAL | Optica Member
+> Physics Undergraduate at Universidad de Salamanca | Optics & Photonics · Astrophysics · Quantum Mechanics | Science Communicator at Supernova Astronomy Association & Radio USAL | Optica Member
 
 **Location:** Salamanca, Castile and León, Spain
 
