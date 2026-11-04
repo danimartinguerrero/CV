@@ -31,13 +31,13 @@ add a second profile in Spanish ("Add profile in another language").
 
 ## 2. About (max. 2,600 characters)
 
-> I'm a second-year Physics student at the Universidad de Salamanca, and I'm passionate about almost everything, from tensors to Dostoevsky.
+> I'm a second-year Physics student at the Universidad de Salamanca, and I'm passionate about almost everything: from tensors to Dostoevsky, from the laboratory to the cinema of Tarkovsky and Kurosawa.
 >
-> My interests lie in optics and photonics, astrophysics and the foundations of quantum mechanics. I enjoy the mathematical side of physics as much as the laboratory: Hilbert spaces and differential forms, but also breadboards, Arduino, LabVIEW and the careful treatment of uncertainty in every measurement.
+> My interests lie in optics and photonics, astrophysics and the foundations of quantum mechanics. I enjoy the mathematical side of physics as much as the experimental one: Hilbert spaces and differential forms, but also breadboards, Arduino, LabVIEW and the careful treatment of uncertainty in every measurement.
 >
-> I also believe that science is only complete when it is shared. I write and present science content for Radio USAL, the University of Salamanca's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and mathematics videos on TikTok, take part in public outreach such as the European Researchers' Night, and have spoken at philosophy congresses and olympiads.
+> I also believe that science is only complete when it is shared. With the Supernova Astronomy Association, I write and present science content for Radio USAL, the University of Salamanca's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and mathematics videos on TikTok, take part in public outreach such as the European Researchers' Night, and have spoken at philosophy congresses and olympiads.
 >
-> I'm a member of Optica, the OSAL Student Chapter, the Supernova astronomy association and the Student Group of the Royal Spanish Physics Society (RSEF).
+> I'm a member of Optica, the OSAL Student Chapter, Supernova and the Student Group of the Royal Spanish Physics Society (RSEF).
 >
 > Physics taught me to read the universe; I want to help others read it too. Because, in the end, science is elegant.
 
