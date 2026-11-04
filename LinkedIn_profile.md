@@ -43,7 +43,7 @@ add a second profile in Spanish ("Add profile in another language").
 >
 > I'm a member of Optica, the OSAL Student Chapter, Supernova and the Student Group of the Royal Spanish Physics Society (RSEF).
 >
-> In 1990, Voyager 1 turned around and photographed Earth from six billion kilometres away: a pale blue dot, smaller than a pixel. Carl Sagan looked at it and wrote: "That's here. That's home. That's us." Everything that has ever divided us fits in that single pixel.
+> We live on one planet, among four hundred billion stars, among two trillion galaxies. It is easy to feel insignificant, yet the same numbers that make us small make us rare, and you don't need to be big to be valuable. As Brian Cox puts it: "We are the cosmos made conscious, and life is the means by which the universe understands itself."
 >
 > Physics taught me to read the universe; I want to help others read it too. Because, in the end, science is elegant.
 
