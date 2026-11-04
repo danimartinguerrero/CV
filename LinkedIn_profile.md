@@ -33,15 +33,13 @@ add a second profile in Spanish ("Add profile in another language").
 
 > I'm a second-year Physics student at the Universidad de Salamanca who refuses to choose between the equations and the questions behind them. I'm passionate about almost everything: from tensors to Dostoevsky, from the laboratory to the cinema of Tarkovsky and Kurosawa.
 >
-> My interests lie in optics and photonics, astrophysics and the foundations of quantum mechanics. I enjoy the mathematical side of physics as much as the experimental one: Hilbert spaces and differential forms, but also breadboards, Arduino, LabVIEW and the careful treatment of uncertainty in every measurement.
+> My interests lie in optics and photonics, astrophysics and the foundations of quantum mechanics. I enjoy the mathematical side of physics as much as the experimental one: Hilbert spaces and differential forms, but also breadboards, Arduino, LabVIEW and careful uncertainty analysis. Along the way, I won the University Access Award for one of the 100 top entrance-exam scores (13.378/14), graduated from high school with Honours (9.88/10) and was a finalist in the Philosophical Olympiad of Castilla y León two years in a row.
 >
 > I believe science is not a wall of certainties, but a conversation. It grows at the frontier of "why not?", out of paradoxes, disagreements and people brave enough to say what nobody wants to hear, like Cecilia Payne, who was persuaded to call her discovery of what stars are made of "almost certainly not real". Correcting itself is its greatest virtue, and listening to those who think differently, even to disagree with them, is one of the most scientific things we can do. No one owns the truth: it is a horizon we walk towards together. Amicus Plato, sed magis amica veritas.
 >
 > Like the physicist Jorge Wagensberg, I believe knowledge flows from science, art and intuition, and that ideas thrive where disciplines meet, not where they wall themselves in. That is why I feel as much at home at a philosophy congress as in front of a differential equation.
 >
-> And science is only complete when it is shared. With the Supernova Astronomy Association, I write and present for Radio USAL, the University of Salamanca's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and mathematics videos on TikTok and take part in public outreach such as the European Researchers' Night. My motto as a communicator: build bridges, never silence voices.
->
-> I'm a member of Optica, the OSAL Student Chapter, Supernova and the Student Group of the Royal Spanish Physics Society (RSEF).
+> And science is only complete when it is shared. With the Supernova Astronomy Association, I write and present for Radio USAL, the university's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and maths videos on TikTok and take part in public outreach such as the European Researchers' Night. My motto as a communicator: build bridges, never silence voices.
 >
 > We live on one planet, among four hundred billion stars, among two trillion galaxies. It is easy to feel insignificant, yet the same numbers that make us small make us rare, and you don't need to be big to be valuable. As Brian Cox puts it: "We are the cosmos made conscious, and life is the means by which the universe understands itself."
 >
