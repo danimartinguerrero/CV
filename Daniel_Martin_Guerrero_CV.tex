@@ -17,7 +17,7 @@
 \pdfgentounicode=1                 % machine-readable (ATS-friendly) text
 
 % ---------- Layout --------------------------------------------------
-\usepackage[a4paper,top=1.0cm,bottom=0.9cm,left=1.35cm,right=1.35cm]{geometry}
+\usepackage[a4paper,top=0.9cm,bottom=0.8cm,left=1.35cm,right=1.35cm]{geometry}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -41,7 +41,7 @@
 \titleformat{\section}
   {\fontsize{11.5}{13}\selectfont\scshape\color{accent}}{}{0pt}{}
   [\vspace{-0.5ex}{\color{accent!45}\titlerule[0.5pt]}]
-\titlespacing*{\section}{0pt}{1.05ex}{0.5ex}
+\titlespacing*{\section}{0pt}{0.85ex}{0.45ex}
 
 % ---------- Lists ---------------------------------------------------
 \setlist[itemize]{leftmargin=1.0em, labelsep=0.4em, itemsep=0pt,
@@ -59,7 +59,7 @@
 \newcommand{\dated}[2]{#1\hfill\mbox{\quad\itshape\color{muted}#2}}
 % \row{Label}{Text}
 \newcommand{\row}[2]{\hangindent=1em\hangafter=1{\bfseries\color{accent}#1:} #2\par}
-\newcommand{\gap}{\vspace{0.45ex}}
+\newcommand{\gap}{\vspace{0.3ex}}
 \newcommand{\icon}[1]{\makebox[1.15em][c]{\color{accent}#1}}
 
 % ===================================================================
@@ -109,9 +109,8 @@
 \section{Science Communication \& Outreach}
 \entry{Radio USAL -- \textit{Eureka}, science outreach programme}{2026 -- Present}{Scriptwriter \& Presenter; creator of the segment \textup{\textit{Cosmosofía}}}{Supernova Astronomy Association}
 \begin{itemize}
-  \item Write and present astronomy content for the University of Salamanca's official radio station (\textit{Radioacción Cósmica} slot).
-        \textit{Cosmosofía} bridges astrophysics and philosophy of science; Episode~I explores our cosmic coordinates, stellar
-        nucleosynthesis and Cecilia Payne's discovery, science as an open conversation and Sagan's \textit{Pale Blue Dot}.
+  \item Astronomy content for the University of Salamanca's official radio station. \textit{Cosmosofía} bridges astrophysics and philosophy
+        of science: cosmic coordinates, stellar nucleosynthesis, Cecilia Payne's discovery and Sagan's \textit{Pale Blue Dot}.
 \end{itemize}
 \gap
 \entry{European Researchers' Night 2026 -- Universidad de Salamanca}{25 Sep.\ 2026}{Activity leader, \textup{``Houston, tenemos un telescopio''} (Houston, we have a telescope)}{Salamanca, Spain}
@@ -141,13 +140,21 @@
 \entry{Book presentation of \textit{Salvar a Sócrates} (Ariel) with author Eduardo Infante}{5 Jun.\ 2026}{Panellist}{Librería Víctor Jara, Salamanca}
 
 % ---------------------- Projects & independent study ----------------
-\section{Independent Study \& Projects}
+\section{Projects \& Independent Study}
+\entry{\textit{Talking Hands} -- Sign-Language Translator Glove}{2024 -- 2025}{Hardware \& firmware co-developer (with Rubén González Sánchez), ICT~II project}{IES Federico García Bernalt}
 \begin{itemize}
-  \item \dated{\textbf{Quantum Mechanics \& Quantum Computing:} authored \LaTeX\ notes on Hilbert spaces and the Dirac formalism
-        (inner products, completeness, $L^2(\mathbb{R})$, bras and kets, Hermitian operators, spectral decomposition, Born rule);
-        studying qubits and quantum gates (Hadamard).}{2026 -- Present}
-  \item \dated{\textbf{AI-Assisted Modelling:} simulations and models of physical systems, from parametrised manifolds to
-        least-squares fits, and structured study notes with Claude Opus 5.5, Gemini, open-source LLMs and NotebookLM.}{2025 -- Present}
+  \item Built a wearable assistive device that translates the Spanish fingerspelling alphabet into text, so that people with speech
+        impairments can communicate with those who do not know sign language.
+  \item Instrumented a glove with five flex sensors in voltage-divider circuits on an Arduino Mega 2560 (10-bit ADC); wrote C/C++ firmware
+        for sensor calibration and threshold-based gesture classification, streaming letters over serial to a mobile app for display and speech.
+  \item Added a servo mode mirroring finger flexion, a 3D model and a proposed wireless version with skin-like pressure sensors.
+\end{itemize}
+\gap
+\begin{itemize}
+  \item \dated{\textbf{Quantum Mechanics \& Computing:} authored \LaTeX\ notes on Hilbert spaces and the Dirac formalism ($L^2(\mathbb{R})$,
+        bras and kets, Hermitian operators, spectral decomposition, Born rule); studying qubits and quantum gates.}{2026 -- Present}
+  \item \dated{\textbf{AI-Assisted Modelling:} physical simulations, from parametrised manifolds to least-squares fits, and study notes
+        with Claude Opus 5.5, Gemini, open-source LLMs and NotebookLM.}{2025 -- Present}
 \end{itemize}
 
 % ------------------------ Memberships -------------------------------
@@ -172,7 +179,6 @@
 \row{Programming}{Python, MATLAB, Arduino (C/C++ on the Wiring framework), HTML (basic).}
 \row{Lab \& tools}{Breadboard circuit prototyping with Arduino and LabVIEW; Mathematica, PHYWE measure, SAOImage DS9 (astronomical image analysis), \LaTeX\ (advanced).}
 \row{Languages}{Spanish (native); English (advanced, C1-level training).}
-\row{Interests}{Astrophysics, optics and photonics (laser science, integrated photonics), particle physics, quantum computing;
-  philosophy and cinema (Tarkovsky, Lynch, Bergman, Kurosawa, Kobayashi), film reviews on Letterboxd.}
+\row{Interests}{Astrophysics, optics and photonics, particle physics; philosophy and cinema (Tarkovsky, Lynch, Bergman, Kurosawa).}
 
 \end{document}

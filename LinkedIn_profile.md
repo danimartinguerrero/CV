@@ -131,6 +131,18 @@ Add as *Link* or *Media*:
 
 ## 7. Projects
 
+### Talking Hands (Manos que hablan) – Sign-Language Translator Glove
+**Associated with:** IES Federico García Bernalt · **Dates:** 2024 – 2025
+**Contributors:** Rubén González Sánchez
+
+> Wearable assistive device that translates the Spanish fingerspelling alphabet into text, so that people with speech impairments can communicate with those who do not know sign language (ICT II project).
+>
+> • Instrumented a glove with five resistive flex sensors in voltage-divider circuits on an Arduino Mega 2560 (10-bit ADC).
+> • Wrote C/C++ firmware for sensor calibration and threshold-based gesture classification, streaming recognised letters over serial to a mobile app for on-screen display and speech output.
+> • Added a servo-actuated mode that mirrors finger flexion, designed a 3D model and proposed a wireless version with skin-like pressure sensors.
+
+**Skills:** Arduino · C/C++ · Embedded Systems · Sensors · Assistive Technology · 3D Modelling
+
 ### Talk: "Como lágrimas en la lluvia" (Like Tears in Rain)
 **Associated with:** Universidad de Salamanca · **Date:** Nov 2025
 
