@@ -31,13 +31,19 @@ add a second profile in Spanish ("Add profile in another language").
 
 ## 2. About (max. 2,600 characters)
 
-> I'm a second-year Physics student at the Universidad de Salamanca, and I'm passionate about almost everything: from tensors to Dostoevsky, from the laboratory to the cinema of Tarkovsky and Kurosawa.
+> I'm a second-year Physics student at the Universidad de Salamanca who refuses to choose between the equations and the questions behind them. I'm passionate about almost everything: from tensors to Dostoevsky, from the laboratory to the cinema of Tarkovsky and Kurosawa.
 >
 > My interests lie in optics and photonics, astrophysics and the foundations of quantum mechanics. I enjoy the mathematical side of physics as much as the experimental one: Hilbert spaces and differential forms, but also breadboards, Arduino, LabVIEW and the careful treatment of uncertainty in every measurement.
 >
-> I also believe that science is only complete when it is shared. With the Supernova Astronomy Association, I write and present science content for Radio USAL, the University of Salamanca's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and mathematics videos on TikTok, take part in public outreach such as the European Researchers' Night, and have spoken at philosophy congresses and olympiads.
+> I believe science is not a wall of certainties, but a conversation. It grows at the frontier of "why not?", out of paradoxes, disagreements and people brave enough to say what nobody wants to hear, like Cecilia Payne, who was persuaded to call her discovery of what stars are made of "almost certainly not real". Correcting itself is its greatest virtue, and listening to those who think differently, even to disagree with them, is one of the most scientific things we can do. No one owns the truth: it is a horizon we walk towards together. Amicus Plato, sed magis amica veritas.
+>
+> Like the physicist Jorge Wagensberg, I believe knowledge flows from science, art and intuition, and that ideas thrive where disciplines meet, not where they wall themselves in. That is why I feel as much at home at a philosophy congress as in front of a differential equation.
+>
+> And science is only complete when it is shared. With the Supernova Astronomy Association, I write and present for Radio USAL, the University of Salamanca's official radio station, where I created Cosmosofía, a segment that bridges astrophysics and the philosophy of science. I also make physics and mathematics videos on TikTok and take part in public outreach such as the European Researchers' Night. My motto as a communicator: build bridges, never silence voices.
 >
 > I'm a member of Optica, the OSAL Student Chapter, Supernova and the Student Group of the Royal Spanish Physics Society (RSEF).
+>
+> In 1990, Voyager 1 turned around and photographed Earth from six billion kilometres away: a pale blue dot, smaller than a pixel. Carl Sagan looked at it and wrote: "That's here. That's home. That's us." Everything that has ever divided us fits in that single pixel.
 >
 > Physics taught me to read the universe; I want to help others read it too. Because, in the end, science is elegant.
 
