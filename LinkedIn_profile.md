@@ -380,7 +380,7 @@ LinkedIn shows your posts to your contacts; a profile with recent posts gets far
 > #Astrophysics #ScienceCommunication #Physics #UniversidadDeSalamanca
 
 ### 13.2 Second post: the Philosophical Olympiad (with 2–3 photos)
-> Two years ago I was a finalist in the Philosophical Olympiad of Castilla y León. This year I came back on the other side of the microphone. 🎙️
+> In 2024 and 2025 I was a finalist in the Philosophical Olympiad of Castilla y León. In February 2026 I came back on the other side of the microphone. 🎙️
 >
 > I was invited to speak at the XXI edition, on madness and Don Quixote, with "The Shipwreck of Light": a dissertation on how Don Quixote and Dostoevsky's Prince Myshkin are called mad precisely because they insist on being good.
 >
