@@ -170,17 +170,36 @@ Add as *Link* or *Media*:
 
 ## 8. Honors & awards
 
-| Title | Issuer | Date |
-|---|---|---|
-| University Access Award (Premio de Acceso a la Universidad) | Universidad de Salamanca | Jun 2025 |
-| Bachillerato with Honours (Matrícula de Honor) – 9.88/10 | IES Federico García Bernalt | May 2025 |
-| Highest Honours in Physics Laboratory | Universidad de Salamanca | 2026 |
-| Finalist – Philosophical Olympiad of Castilla y León (XX edition) | Asociación Olimpiada Filosófica de Castilla y León | 2025 |
-| Finalist – Philosophical Olympiad of Castilla y León (XIX edition) | Asociación Olimpiada Filosófica de Castilla y León | 2024 |
+Profile → *Add profile section* → *Recommended* → *Add honors & awards*.
+Fill one entry per award with these fields (Title · Associated with · Issuer · Issue date · Description).
 
-Description for the University Access Award:
+### University Access Award (Premio de Acceso a la Universidad)
+- **Associated with:** Universidad de Salamanca
+- **Issuer:** Universidad de Salamanca
+- **Issue date:** Jun 2025
 
-> Awarded to the top 100 scores in the general phase of the 2024/25 university entrance examination (PAU: 13.378/14); full first-year tuition waiver.
+> Awarded by the University of Salamanca to the 100 students with the highest scores in the general phase of the 2024/25 university entrance examination (PAU). Score: 13.378/14. The award covers full tuition for the first year of my BSc in Physics.
+
+### Highest Honours (Matrícula de Honor) in Physics Laboratory
+- **Associated with:** Universidad de Salamanca
+- **Issuer:** Universidad de Salamanca – Faculty of Sciences
+- **Issue date:** Jun 2026
+
+> Highest distinction in the Spanish university grading system, limited by law to at most 5% of the students in a course. Awarded in the first-year Physics Laboratory course: experimental measurement, data analysis and uncertainty quantification.
+
+### High School Diploma with Honours (Matrícula de Honor)
+- **Associated with:** IES Federico García Bernalt
+- **Issuer:** IES Federico García Bernalt – Junta de Castilla y León
+- **Issue date:** May 2025
+
+> Highest distinction at the end of upper secondary education in Spain, granted to a maximum of 5% of the cohort. Graduated from the Science and Technology track with a 9.88/10 average.
+
+### Two-Time Finalist – Philosophical Olympiad of Castilla y León
+- **Associated with:** IES Federico García Bernalt
+- **Issuer:** Asociación Olimpiada Filosófica de Castilla y León
+- **Issue date:** 2025 (add the month from the certificate)
+
+> Finalist in the philosophical dissertation category (Bachillerato) in two consecutive editions, XIX (2024) and XX (2025), of the regional Philosophical Olympiad. The following year, I was invited back to the XXI edition as a speaker and round-table panellist.
 
 ---
 
